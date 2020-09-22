@@ -1,0 +1,31 @@
+<template>
+ 
+    <!-- Account Record type Picklist -->
+    <label class="slds-form-element__label" for="recordType">Select Record Type</label>
+    <div class="slds-form-element__control">
+      <div class="slds-select_container">
+        <select class="slds-select" id="recordType" onchange={onValueSelection}>
+          <option value="">---None---</option>
+          <!--iterate all picklist values from lstRecordTypes property using for:each loop-->
+          <template for:each={lstRecordTypes} for:item="RT">
+            <option key={RT.value} value={RT.value}>{RT.label}</option>
+          </template>
+        </select>
+      </div>
+    </div>
+   
+    <!-- Opportunity Rating picklist -->
+    <label class="slds-form-element__label" for="Rating">Rating</label>
+    <div class="slds-form-element__control">
+      <div class="slds-select_container">
+        <select class="slds-select" id="Rating">
+          <option value="">---None---</option>
+          <!--iterate all picklist values from lstRatings property using for:each loop-->
+          <template for:each={lstRatings} for:item="rating">
+            <option key={rating.value} value={rating.value}>{rating.label}</option>
+          </template>
+        </select>
+      </div>
+    </div>
+   
+  </template>

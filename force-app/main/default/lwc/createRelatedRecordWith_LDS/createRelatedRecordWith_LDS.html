@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Create Account With Contact Using LDS In LWC" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Name"
+                             onchange={handleNameChange} 
+                             value={accountName}
+                             class="slds-m-bottom_x-small"></lightning-input>
+                             
+            <lightning-button label="Save"
+                              variant="brand"
+                              onclick={save}></lightning-button>
+        </div>
+     </lightning-card>
+</template>
