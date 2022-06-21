@@ -162,7 +162,7 @@
     <label>Car</label>
     <nameField>
         <label>Car Name</label>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Cars</pluralLabel>
